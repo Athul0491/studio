@@ -13,10 +13,10 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://studio.asyncapi.com/">
+    <meta property="og:url" content="https://master--fav-og-img.netlify.app/">
     <meta property="og:title" content="AsyncAPI Studio">
     <meta property="og:description" content="Studio for AsyncAPI specification, where you can validate, view preview documentation, and generate templates from AsyncAPI document.">
-    <meta property="og:image" content="%PUBLIC_URL%/img/meta-studio-og-image.jpeg">
+    <meta property="og:image" content="/img/meta-studio-og-image.jpeg"/>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -29,6 +29,12 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-194x194.png" />
 
     <title>AsyncAPI Studio</title>
+    <script>
+      const params = new URLSearchParams(window.location.search)
+      if (params.has('base64')) {
+        document.querySelector('meta[property="og:image"]').setAttribute("content", "https://master--fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
