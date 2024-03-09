@@ -29,6 +29,9 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-194x194.png" />
 
     <title>AsyncAPI Studio</title>
+    
+  </head>
+  <body>
     <script>
       const params = new URLSearchParams(window.location.search)
       if (params.has('base64')) {
@@ -36,8 +39,6 @@
         document.querySelector('meta[property="twitter:image"]').setAttribute("content", "https://master--fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
       }
     </script>
-  </head>
-  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="preloader">
