@@ -16,22 +16,20 @@
     <meta property="og:url" content="https://cozy-alpaca-61a0b5.netlify.app/">
     <meta property="og:title" content="AsyncAPI Studio">
     <meta property="og:description" content="Studio for AsyncAPI specification, where you can validate, view preview documentation, and generate templates from AsyncAPI document.">
-    <meta property="og:image" content="/img/meta-studio-og-image.jpeg"/>
+    <meta property="og:image" content="/img/meta-studio-og-image.jpeg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="@AsyncAPISpec">
-    <meta property="twitter:domain" content="https://studio.asyncapi.com">
+    <meta property="twitter:domain" content="https://cozy-alpaca-61a0b5.netlify.app/">
     <meta property="twitter:title" content="AsyncAPI Studio">
     <meta property="twitter:description" content="Studio for AsyncAPI specification, where you can validate, view preview documentation, and generate templates from AsyncAPI document.">
     <meta property="twitter:image" content="%PUBLIC_URL%/img/meta-studio-og-image.jpeg">
 
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-194x194.png" />
 
     <title>AsyncAPI Studio</title>
-    
-  </head>
-  <body>
     <script>
       const params = new URLSearchParams(window.location.search)
       if (params.has('base64')) {
@@ -39,6 +37,8 @@
         document.querySelector('meta[property="twitter:image"]').setAttribute("content", "https://master--fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
       }
     </script>
+  </head>
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="preloader">
