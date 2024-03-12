@@ -33,8 +33,8 @@
     <script>
       const params = new URLSearchParams(window.location.search)
       if (params.has('base64')) {
-        document.querySelector('meta[property="og:image"]').setAttribute("content", "https://master--fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
-        document.querySelector('meta[property="twitter:image"]').setAttribute("content", "https://master--fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
+        document.querySelector('meta[property="og:image"]').setAttribute("content", "https://fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
+        document.querySelector('meta[property="twitter:image"]').setAttribute("content", "https://fav-og-img.netlify.app/api/og?base64=" + params.get('base64'));
       }
     </script>
   </head>
